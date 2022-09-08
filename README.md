@@ -1,6 +1,8 @@
 # pubsub-push-to-cloud-function
 
-Connects pubsub emulator to locally running Cloud function. This utility helps POST the payloads from topics to Cloud Functions.
+Connects Pub/Sub emulator to locally running Cloud function. This utility helps POST the payloads from topics to Cloud Functions.
+
+While Pub/Sub emulator does have the ability to push messages to the target end point. An utility like this is especially helpful if you need flow control to limit the number of parallel executions of your Cloud Function. 
 
 ## Setup
 

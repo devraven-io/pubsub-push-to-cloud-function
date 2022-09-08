@@ -4,7 +4,7 @@ Connects pubsub emulator to locally running Cloud function. This utility helps P
 
 ## Setup
 
-0. Run `npm install` to install the dependencies.
+0. Clone this repository and run `npm install` to install the dependencies.
 
 1. Refer https://cloud.google.com/pubsub/docs/emulator for instructions on setting up local pubsub emulator.
 

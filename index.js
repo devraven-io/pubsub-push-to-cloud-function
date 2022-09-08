@@ -6,8 +6,8 @@ const { PubSub } = require('@google-cloud/pubsub');
 const axios = require('axios').default;
 const getCloudFunctionPayload = require('./envelope');
 
-const CLOUD_FUNCTION_URL = "http://localhost:8086"; //change this to the location where your cloud function is running
-const SUBSCRIPTION_NAME = "local_topic_sub"; //change this to your local topic's subscription name
+const CLOUD_FUNCTION_URL = process.env.CLOUD_FUNCTION_URL || "http://localhost:8086"; //change this to the location where your cloud function is running
+const SUBSCRIPTION_NAME = process.env.TOPIC_SUBSCRIPTION || "local_topic_sub"; //change this to your local topic's subscription name
 
 if(!process.env.PUBSUB_EMULATOR_HOST) {
     console.error("ERROR: PUBSUB_EMULATOR_HOST is not set!");
